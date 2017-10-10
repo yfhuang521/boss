@@ -48,6 +48,7 @@
 	<form:form id="searchForm" modelAttribute="cardMonitorCondition" action="${ctx}/mifi/cardMonitor/" method="post" class="breadcrumb form-search">
 		<input id="pageNo" name="pageNo" type="hidden" value="${page.pageNo}"/>
 		<input id="pageSize" name="pageSize" type="hidden" value="${page.pageSize}"/>
+		<input id="initTag" name="initTag" type="hidden" value="1" />
 		<label>设备编号：</label><form:input path="likeImei" htmlEscape="false" maxlength="32" class="input-small"/>
 	    <label>状态：</label>
 	    <form:select path="eqStatus" class="input-small">
